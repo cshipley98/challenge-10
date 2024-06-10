@@ -48,3 +48,21 @@ const newRole = [
         message: "Enter Department ID:"
     }
 ];
+
+const newEmployee = [
+    {
+        type: "input",
+        name: "first_name",
+        message: "Enter First Name:"
+    },
+    {
+        type: "input",
+        name: "last_name",
+        message: "Enter Last Name:"
+    },
+    {
+        type: "input",
+        name: "role_id",
+        message: "Enter Role ID:"
+    }
+]

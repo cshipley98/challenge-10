@@ -22,3 +22,29 @@ const mainMenu = [
         choices: ["View All Departments", "View All Roles", "View All Employees", "Add Department", "Add Role", "Add Employee", "Update Employee Role"]
     }
 ];
+
+const newDepartment = [
+    {
+        type: "input",
+        name: "department_name",
+        message: "Enter Department Name:"
+    }
+];
+
+const newRole = [
+    {
+        type: "input",
+        name: "title",
+        message: "Enter Title:"
+    },
+    {
+        type: "input",
+        name: "salary",
+        message: "Enter Salary:"
+    },
+    {
+        type: "input",
+        name: "department_id",
+        message: "Enter Department ID:"
+    }
+];

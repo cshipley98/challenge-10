@@ -66,3 +66,36 @@ const newEmployee = [
         message: "Enter Role ID:"
     }
 ]
+
+const promptMenu = () => {
+
+    inquirer.prompt(mainMenu).then(answers => {
+        console.log(answers);
+        //based on user answer
+        
+        switch(answers.action){
+            case "View All Departments": 
+                viewDepartments();
+            break;
+            case "View All Roles":
+                viewRoles();
+            break;
+            case "View All Employees":
+                viewEmployees();
+            break;
+            case "Add Department":
+                addDepartment();
+            break;
+            case "Add Role":
+                addRole();
+            break;
+            case "Add Employee":
+                addEmployee();
+            break;
+            case "Update Employee Role":
+                updateEmployeeRole();
+            break;
+            }
+        }
+    )
+};
